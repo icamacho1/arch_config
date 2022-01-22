@@ -14,7 +14,8 @@ pacman -S thunar \
 	  rofi \
 	  rclone \
 	  chromium \
-          starship
+          starship \
+          xclip
 
 # Modules to run picom-ibhagwan-git:
 pip3 install asciidoc meson
