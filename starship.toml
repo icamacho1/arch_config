@@ -1,0 +1,48 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# One liner commands
+[line_break]
+disabled = true
+
+# Battery configuration
+[battery]
+full_symbol = " "
+charging_symbol = " "
+discharging_symbol = " "
+
+[[battery.display]]
+threshold = 30
+style = "bold red"
+
+[[battery.display]]
+threshold = 70
+style = "bold yellow"
+
+[[battery.display]]
+threshold = 100
+style = "bold green"
+
+# Error codes:
+[character]
+success_symbol = "[❯](bold green) "
+error_symbol = "[✗](bold red) "
+
+# Show current user
+[username]
+style_user = "bold dimmed blue"
+show_always = true
+
+# type of shell:
+[shell]
+fish_indicator = ""
+powershell_indicator = "_"
+bash_indicator = ""
+unknown_indicator = "mystery shell"
+style = "cyan bold"
+disabled = false
+
+# My ip:
+[custom.ip_addr]
+command = "hostname -I | awk '{print $1}'"
+disabled = false
